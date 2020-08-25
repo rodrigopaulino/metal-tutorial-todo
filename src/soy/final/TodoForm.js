@@ -18,14 +18,22 @@ class TodoForm extends Component {
 	}
 
 	handleChange(event) {
-		this.value = event.target.value;
+		const {target} = event;
+		let {value} = target;
+
+		this.setState(
+			{
+				value
+			},
+			() => {}
+		);
 	}
 }
 Soy.register(TodoForm, templates);
 
 TodoForm.STATE = {
 	value: {
-		value: ''
+		value: 'teste'
 	}
 }
 
