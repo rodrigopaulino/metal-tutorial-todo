@@ -8,7 +8,7 @@
 
 	<form class="todo-form" data-onsubmit="handleSubmit">
 		<label for="title">
-			Todo <input data-onkeyup="handleChange" name="title" value="{$value}" />
+			Todo <textarea data-onkeyup="handleChange" name="title" placeholder="enter you text here">{$value}</textarea>
 		</label>
 		<button type="submit">Add</button>
 	</form>
